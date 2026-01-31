@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#searchInput {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#searchInput:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-color: white;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4a90e2;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+/* Xen kẽ màu nền */
+tbody tr:nth-child(odd) {
+  background-color: #2d2d2d;
+  color: #f0f0f0;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff;
+  color: #333;
+}
+
+tbody tr:hover {
+  background-color: #e0e0ff !important;
+  color: #000;
+  transition: background-color 0.2s;
+}
+
+.product-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2em;
+  color: #666;
+  margin: 40px 0;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#pageSizeSelect {
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.pagination {
+  text-align: center;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.pagination button {
+  padding: 10px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pagination button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #357abd;
+}
+
+#pageInfo {
+  font-size: 1.1em;
+  font-weight: bold;
+  min-width: 120px;
+  text-align: center;
+}
